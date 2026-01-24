@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invite / ex3</title>
+    <link rel="stylesheet" href="/files/ss.css">
+    <script src="/files/message.js" defer></script>
+    <script src="/files/turbolinks.js"></script>
+    <script>Turbolinks.start();</script>
+    <link rel="icon" href="https://cdn.exerinity.com/images/ex3/home.png" type="image/webp">
+    <meta property="og:title" content="Invite / ex3">
+    <meta property="og:image" content="https://cdn.exerinity.com/images/ex3/home.png">
+    <meta property="og:description" content="Invite or authorize ex3 to your server and/or">
+    <meta property="og:site_name" content="Invite / ex3">
+    <meta property="og:url" content="https://ex3.icu">
+    <meta name="theme-color" content="#4a29c2">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="brand"><img src="https://cdn.exerinity.com/images/ex3/home.png" alt="icon, sparks of lightning"
+                    class="icon">ex3</a>
+            <div class="nav-links">
+                <li><a href="/">home</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/faq">faq</a></li>
+                <li><span class="here"
+                        onclick="msg('Appreciate the enthusiasm... but, you are already here')">invite</span></li>
+                <li><a href="/commands" data-turbolinks="false">commands</a></li>
+                <li><a href="/privacy">privacy</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <h1>Invite ex3</h1>
+            <h2 id="servercount">Invite</h2>
+            <a href="https://discord.com/oauth2/authorize?client_id=757780137449226272"
+                style="animation: rave 5s infinite">Click here</a>
+            <h2>Shortcuts</h2>
+            <a href="https://exerinity.com/invite">exerinity.com/invite</a> or <a href="/inv">ex3.icu/inv</a><hr>
+            <p>
+                ex3 can also be authorized to "My Apps", allowing you to use (most of) its commands in DMs, group chats
+                and servers (that permit it) without needing to invite it to a server. About 80% commands work in this
+                state, the remaining 20%:
+            </p>
+            <ul>
+                <li>Guild specific commands like <strong>ban</strong>, <strong>guild info</strong></li>
+                <li>Interactive commands. For some reason, an error is thrown when you click buttons without a present
+                    guild context.</li>
+            </ul>
+            <img src="https://i.exerinity.com/BwXXK4MFRW.png" style="max-width: 100%" alt="Screenshot of ex3 inviting landing modal on Discord">
+        </main>
+    </div>
+    <script src="/files/home.js" defer></script>
+</body>
+
+</html>

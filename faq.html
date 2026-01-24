@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ / ex3</title>
+    <link rel="stylesheet" href="/files/ss.css" />
+    <script src="/files/message.js" defer></script>
+    <script src="/files/turbolinks.js"></script>
+    <script>Turbolinks.start();</script>
+    <link rel="icon" href="https://cdn.exerinity.com/images/ex3/home.png" type="image/webp" />
+    <meta property="og:title" content="FAQ / ex3" />
+    <meta property="og:image" content="https://cdn.exerinity.com/images/ex3/home.png" />
+    <meta property="og:description" content="a discord bot... what else?" />
+    <meta property="og:site_name" content="FAQ / ex3" />
+    <meta property="og:url" content="https://ex3.icu" />
+    <meta name="theme-color" content="#9b59b6" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="brand"><img src="https://cdn.exerinity.com/images/ex3/home.png" alt="icon, sparks of lightning" class="icon">ex3</a>
+            <div class="nav-links">
+                <li><a href="/">home</a></li>
+                <li><a href="/about">about</a></li>
+                <li><span class="here" onclick="msg('Appreciate the enthusiasm... but, you are already here.')">faq</span></li>
+                <li><a href="/invite" class="rave-animation">invite</a></li>
+                <li><a href="/commands" data-turbolinks="false">commands</a></li>
+                <li><a href="/privacy">privacy</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main>
+            <h1>Frequently asked questions</h1>
+            <p>(nobody asked any of these, i made them up)</p>
+            <h2>What's the prefix?</h2>
+            <p>ex3 only uses slash commands. So, it's <strong>/</strong></p>
+            <h2>Are ex3 and <a href="https://pigeon.exerinity.com">pigeon</a> related?</h2>
+            <p>
+                Yes/No. They're both made by me, follow the same format, but they are completely unrelated in terms of functionality.
+            </p>
+            <h3>Out of ex3 and pigeon, who would you say is your best/flagship?</h3>
+            <p>
+                ex3. Sure, pigeon is pretty cool (I hope), but ex3 is much more stable and multifaceted. ex3 has an easier-to-work with structure, and simply more enjoyable to work on.
+            </p>
+            <h2>What is the history of ex3?</h2>
+            <p>
+                ex3 was originally called <strong>sparkfirebot</strong>. sparkfirebot was my first major bot; made under my old username "sparkfire298". That bot was giant; it had 200+ commands and enough modules to control the entire world, but it was also three years ago, and stuck on Discord.js v12.<br>
+                djs v12 was quickly deprecating (this is around 2022) and since the bot was so large,<br>going through everything and changing stuff like embeds: <pre> message.channel.send(embed) -> message.channel.send({ embeds: [embed] })</pre>
+                would've certainly been possible in a day or two, but the usage was very low, and I realized nobody actually needed that many things. So, I killed it. Made a much much smaller bot called "sparkbot" in 2022, and resurrected sparkfirebot's account into ex3 in 2023.<br><br>
+                ex3 was (re)born on a vacation. I was sitting in the hotel on my laptop and said "hey, what if I fuse some old code into something odd?".
+            </p>
+            <h2>What does "ex3" mean?</h2>
+            <p>
+                Three things:
+                <ul>
+                    <li>It is shortened from my username, <strong>exerinity</strong>. Remove "rinity", then you have "exe". Make the second E a 3 and there you have it.</li>
+                    <img src="https://i.exerinity.com/KRWEBAjsnK.gif" style="max-width: 100%">
+                    <li>"exe" as in executable, .exe files on Windows.</li>
+                    <li>The three means my third flagship multi-function bot.</li>
+                </ul>
+            </p>
+            <h2>What is the point of ex3?</h2>
+            <p>
+                I actually have no idea, it's just a hobby. I suppose it would be great for toying with, playing around with its varied commands, but it is not suited for larger servers.
+            </p>
+            <h2>What programming language is ex3 made with?</h2>
+            <p>JavaScript. Discord.js.</p>
+            <h2>Is ex3 backed behind a company or team of people?</h2>
+            <p>No, just me. You could even call it "indie".</p>
+            <hr><p>
+                If you have any questions, please <a href="https://exerinity.com/email">email me</a>.
+            </p>
+        </main>
+    </div>
+</body>
+
+</html>

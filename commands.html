@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands / ex3</title>
+    <link rel="stylesheet" href="/files/ss.css">
+    <link rel="stylesheet" href="/files/commands.css">
+    <script src="/files/message.js" defer></script>
+    <script src="/files/turbolinks.js"></script>
+    <script>Turbolinks.start();</script>
+    <link rel="icon" href="https://cdn.exerinity.com/images/ex3/home.png" type="image/webp">
+    <meta property="og:title" content="Commands / ex3">
+    <meta property="og:image" content="https://cdn.exerinity.com/images/ex3/home.png">
+    <meta property="og:description" content="List of commands for ex3, a Discord bot.">
+    <meta property="og:site_name" content="Commands / ex3">
+    <meta property="og:url" content="https://ex3.icu/commands">
+    <meta name="theme-color" content="#9b59b6">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <script src="/files/commands.js" defer></script>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="brand"><img src="https://cdn.exerinity.com/images/ex3/home.png" alt="icon, sparks of lightning" class="icon">ex3</a>
+            <div class="nav-links">
+                <li><a href="/">home</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/faq">faq</a></li>
+                <li><a href="/invite" class="rave-animation">invite</a></li>
+                <li><span class="here" onclick="msg('Appreciate the enthusiasm... but, you are already here.')">commands</span></li>
+                <li><a href="/privacy">privacy</a></li>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <h1>Commands</h1>
+            <noscript>
+                <i class="fa-solidკ-solid fa-triangle-exclamation" style="color: rgb(255, 208, 0)"></i> JavaScript is required to load commands.
+            </noscript>
+            <p id="pla" onclick="location.reload()"><u>(if this does not work, please reload the page, or enable javascript)</u></p>
+            <p id="count"><div class="spinner" id="spins"></div></p>
+            <div id="load" style="display: none;"></div>
+            <div id="err" style="display: none;"></div>
+            <div id="cmds"></div>
+        </main>
+    </div>
+</body>
+</html>

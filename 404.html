@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 / ex3</title>
+    <link rel="stylesheet" href="/files/ss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="/files/turbolinks.js"></script>
+    <script>Turbolinks.start();</script>
+    <script src="/files/message.js" defer></script>
+    <link rel="icon" href="https://cdn.exerinity.com/images/ex3/home.png" type="image/webp">
+    <meta property="og:title" content="ex3">
+    <meta property="og:image" content="/favicon.ico">
+    <meta property="og:description" content="a discord bot... what else?">
+    <meta property="og:site_name" content="ex3">
+    <meta property="og:url" content="https://ex3.icu">
+    <meta name="theme-color" content="#9b59b6">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a style="cursor: default" class="brand"><img src="https://cdn.exerinity.com/images/ex3/home.png" alt="icon, sparks of lightning"
+                    class="icon">ex3</a>
+            <ul class="nav-links">
+                <li><a href="/">home</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/faq">faq</a></li>
+                <li><a href="/invite" class="rave-animation">invite</a></li>
+                <li><a href="/commands" data-turbolinks="false">commands</a></li>
+                <li><a href="/privacy">privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <h1>40404040404040404</h1>
+            <p><div class="spinner"></div> Whatever you were looking for... doesn't exist.</p>
+            <p id="countdown">Sending you home in <span id="seconds">5</span> seconds...</p>
+        </main>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let seconds = 5;
+            const secs = document.getElementById("seconds");
+
+            const countdown = setInterval(() => {
+                seconds--;
+                secs.textContent = seconds;
+
+                if (seconds <= 0) {
+                    document.getElementById("countdown").innerHTML = '<div class="spinner"></div>';
+                    clearInterval(countdown);
+                    Turbolinks.visit("/");
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

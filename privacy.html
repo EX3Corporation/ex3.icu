@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy / ex3</title>
+    <link rel="stylesheet" href="/files/ss.css">
+    <script src="/files/message.js" defer></script>
+    <script src="/files/turbolinks.js"></script>
+    <script>Turbolinks.start();</script>
+    <link rel="icon" href="https://cdn.exerinity.com/images/ex3/home.png" type="image/webp">
+    <meta property="og:title" content="Privacy / ex3">
+    <meta property="og:image" content="https://cdn.exerinity.com/images/ex3/home.png">
+    <meta property="og:description" content="a discord bot... what else?">
+    <meta property="og:site_name" content="Privacy / ex3">
+    <meta property="og:url" content="https://ex3.icu">
+    <meta name="theme-color" content="#9b59b6">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="brand"><img src="https://cdn.exerinity.com/images/ex3/home.png" alt="icon, sparks of lightning" class="icon">ex3</a>
+            <div class="nav-links">
+                <li><a href="/">home</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/faq">faq</a></li>
+                <li><a href="/invite" class="rave-animation">invite</a></li>
+                <li><a href="/commands" data-turbolinks="false">commands</a></li>
+                <li><span class="here" onclick="msg('Appreciate the enthusiasm... but, you are already here.')">privacy</span></li>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <h1>Privacy policy</h1>
+            <i>In a nutshell: No data is collected about <strong>you</strong>.</i>
+            <h2>What's collected?</h2>
+            <p>The only data collected is a single integer that is incremented each time a command is triggered by anyone.<br>It looks like this:<br><pre>400</pre></p>
+            <h2>How is it used?</h2>
+            <p>In /stats. I also may look at it from time to time to see how the bot is going.</p>
+            <h2>Data security</h2>
+            <p>There isn't any data to protect. It's a publicly accessible number.</p>
+            <h2>Opt-out</h2>
+            <p>You cannot opt out of this. It's literally an anonymous number.</p>
+            <h2>Disclaimer</h2>
+            <p>This bot utilizes many different APIs, which may have their own set of privacy policies. Please consult the /credits command to see which APIs are used.</p>
+            <p>Furthermore, avoid sending sensitive information to the bot. Again, nothing is stored on my end, but that may differ for the APIs used. <strong>Some commands allow you to force an ephemeral reply.</strong></p>
+            <hr>
+            <p>
+                If you have any questions, please <a href="https://exerinity.com/email">email me</a>.
+            </p>
+        </main>
+    </div>
+</body>
+</html>

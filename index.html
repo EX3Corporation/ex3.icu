@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / ex3</title>
+    <link rel="stylesheet" href="/files/ss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.exerinity.com/scripts/turbolinks-5.2.0.min.js"></script>
+    <script>Turbolinks.start();</script>
+    <script src="/files/home.js" defer></script>
+    <script src="/files/message.js" defer></script>
+    <link rel="icon" href="https://cdn.exerinity.com/images/ex3/home.png" type="image/webp">
+    <meta property="og:title" content="ex3">
+    <meta property="og:image" content="/favicon.ico">
+    <meta property="og:description" content="A highly experimental Discord bot with 70+ random commands">
+    <meta property="og:site_name" content="ex3">
+    <meta property="og:url" content="https://ex3.icu">
+    <meta name="theme-color" content="#4a29c2">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a style="cursor: default" class="brand"><img src="https://cdn.exerinity.com/images/ex3/home.png" alt="icon, sparks of lightning"
+                    class="icon">ex3</a>
+            <ul class="nav-links">
+                <li><span class="here"
+                        onclick="msg('Appreciate the enthusiasm... but, you are already here.')">home</span></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/faq">faq</a></li>
+                <li><a href="/invite" class="rave-animation">invite</a></li>
+                <li><a href="/commands" data-turbolinks="false">commands</a></li>
+                <li><a href="/privacy">privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <h1>ex3: a highly experimental <i class="fa-brands fa-discord" style="color: #5865f2" title="Discord"></i>
+                bot with 70+ random commands</h1>
+            <p id="servercount"></p>
+            <h2>Some quick features</h2>
+            <ul>
+                <li>70+ random commands, from basic moderation, to fun AI-powered commands, search tools, and doing all
+                    kinds of stuff with RESTful APIs</li>
+                <li>Plug and play: no setup required and works externally and in DMs</li>
+                <li>Collects zero data on you <a href="/privacy">(click)</a></li>
+            </ul>
+            <h2>Some features, but more nerdy</h2>
+            <ul>
+                <li>AI image generation, text translation, text-to-speech, and Whisper transcription</li>
+                <li>Query Wikipedia, Hacker News, Spotify, Last.fm, GitHub, Mastodon, and YouTube</li>
+                <li>Judge your Last.fm music taste with AI in four different flavours</li>
+                <li>Perform WHOIS lookups, convert timezones, and calculate exchange rates</li>
+                <li>Generate memes, mock text, or play /rock-paper-scissors</li>
+                <li>Search Steam games or profiles, IP lookups, country data, BeamNG.drive vehicles</li>
+                <li>/mistranslate - puts text through Google Translate many times for an absurdly mistranslated result
+                </li>
+                <li>No setup or configuration required!</li>
+                <a href="/commands">Read the list of commands?</a>
+            </ul>
+            <h2>Get started</h2>
+            <p>
+                First, you should probably <a href="/commands">read the list of commands</a>. Then, <a href="/invite"
+                    class="rave-animation">invite it or authorize it here</a>!<br>
+            </p>
+            <hr>
+            <h3>
+                <i class="fa-solid fa-triangle-exclamation" style="color: rgb(255, 208, 0)"></i> This is not a
+                dashboard. This is a static documentation and showcase.
+            </h3>
+            <h2>Screenshots</h2>
+            <p>Click on an image to see what command was ran.</p>
+            <img onclick="msg('The command was: <pre>/animal panda</pre>')"
+                src="https://cdn.exerinity.com/images/ex3/showcase-ss.1.png" alt="screenshot of the bot 1"
+                class="screenshot" width="50%" style="cursor: pointer;"><br><br>
+            <img onclick="msg('The command was: <pre>/exchange amount: 5<br>from: BTC to: AUD concise: false</pre>')"
+                src="https://cdn.exerinity.com/images/ex3/showcase-ss.2.png" alt="screenshot of the bot 2"
+                class="screenshot" width="50%" style="cursor: pointer;"><br><br>
+            <img onclick="msg('The command was: <pre>/judge-music-taste user:exerinity<br>style:Roast (profane)</pre>')"
+                src="https://cdn.exerinity.com/images/ex3/showcase-ss.3.png" alt="screenshot of the bot 3"
+                class="screenshot" width="50%" style="cursor: pointer;"><br><br>
+            <img onclick="msg('The command was: <pre>/user info user:@exerinity</pre>')"
+                src="https://cdn.exerinity.com/images/ex3/showcase-ss.4.png" alt="screenshot of the bot 4"
+                class="screenshot" width="50%" style="cursor: pointer;"><br><br>
+            <img onclick="msg('The command was: <pre>/days-left-of-the-year</pre>')"
+                src="https://cdn.exerinity.com/images/ex3/screenshot-ss.5.png" alt="screenshot of the bot 5" class="screenshot" width="50%"
+                style="cursor: pointer;"><br><br>
+            <hr>
+            <p>
+                <a class="button" style="cursor: pointer" onclick="window.location.href='https://exerinity.dev/'">made
+                    by exerinity</a>
+                <a class="button" style="cursor: pointer"
+                    onclick="window.location.href='https://pigeon.exerinity.com/'">try pigeon</a>
+                <a class="button" onclick="hit()" style="cursor: pointer">state the obvious</a>
+                <a class="button" style="cursor: pointer"
+                    onclick="window.location.href='https://exerinity.dev/projects'">see more of my work</a>
+            <footer><i class="fa-regular fa-copyright"></i> 2025 <a href="https://exerinity.dev"
+                    target="_blank">exerinity</a>. some rights reserved. content is licensed under <a
+                    href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC BY-SA 4.0</a>.<br>
+                <a onclick="credits()" style="cursor: pointer">website credits</a>
+            </footer>
+            </p>
+        </main>
+    </div>
+    <script>
+        function hit() {
+            msg(`
+      <h2>the obvious</h2>
+      Not affiliated with Discord Inc.<br>No cookies were harmed in the making of this site. Probably.<br><br>
+      Content on this site is licensed under the CC BY SA 4.0 license. Click the License button to learn more. Some rights reserved.<br>
+      <button class="button" onclick="window.location.href = 'https://creativecommons.org/licenses/by-sa/4.0/deed.en'">License</button> <button class="button" onclick="window.location.href = '/privacy'">Privacy</button> <button class="button" onclick="window.location.href = '/terms'">Terms</button>
+    `);
+        }
+
+        function credits() {
+            msg(`
+            <h2>Credits for ex3.icu</h2>
+            This website uses a few libraries and resources:<br>
+            <ul>
+                <li><a href="https://fontawesome.com/" target="_blank" style="cursor: pointer">Font Awesome</a> for icons</li>
+                <li><a href="https://github.com/turbolinks/turbolinks" target="_blank" style="cursor: pointer">Turbolinks</a> for page navigation</li>
+                <li><a href="https://docs.japi.rest" target="_blank" style="cursor: pointer">JAPI.rest</a> for the server count API</li>
+            </ul>
+            This site is hosted on <a href="https://pages.dev" target="_blank" style="cursor: pointer">Cloudflare Pages</a>.<br><br>
+            Other than that, this site is pretty much entirely hand-crafted!
+            `);
+        }
+    </script>
+</body>
+
+</html>

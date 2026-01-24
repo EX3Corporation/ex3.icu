@@ -1,0 +1,15 @@
+/i/about /about
+/i/commands /commands
+/i/faq /faq
+/i/invite /invite
+/i/privacy /privacy
+/i/terms /terms
+/pre /
+/flow /
+/i/flow /
+/exerinity https://exerinity.com
+/owner https://exerinity.com
+/pre/* /files/:splat
+/inv https://discord.com/oauth2/authorize?client_id=757780137449226272
+/home /
+/i /
