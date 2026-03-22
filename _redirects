@@ -12,4 +12,5 @@
 /pre/* /files/:splat
 /inv https://discord.com/oauth2/authorize?client_id=757780137449226272
 /home /
+/shutdown /i/shutdown
 /i /
