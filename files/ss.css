@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     color: #ffffff;
-    background: linear-gradient(61deg, #6e00b3, #003845, #62004F, #807700);
+    background: linear-gradient(61deg, #3d2a00, #00023f, #410600, #2a0305);
     background-attachment: fixed;
     min-height: 100vh;
 }
@@ -54,6 +54,7 @@ body {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .navbar .nav-links {
